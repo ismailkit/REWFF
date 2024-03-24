@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Microbrew One 3D';
+    src: url('/fonts/Microbrew One 3D.otf') format('opentype');
+    font-display: swap;
+
+  }
+  
+  @font-face {
+    font-family: 'Microbrew One Inline';
+    src: url('/fonts/Microbrew One Inline.otf') format('opentype');
+    font-display: swap;
+
+  }
+  
+  @font-face {
+    font-family: 'Microbrew One Regular';
+    src: url('/fonts/Microbrew One Regular.otf') format('opentype');
+    font-display: swap;
+
+  }
