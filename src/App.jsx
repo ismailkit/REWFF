@@ -7,13 +7,15 @@ import Rewind from "./components/pages/Rewind";
 import Sketch from "./components/pages/Sketch";
 import Gabagool from "./components/pages/Gabagool";
 import About from "./components/pages/About";
+import Chat from "./components/Chat";
 
 function App() {
   return (
-    <div className="flex h-dvh w-dvw flex-col items-center justify-between bg-[#201518] py-8">
+    <div className="flex md:h-dvh w-dvw flex-col items-center justify-between bg-primary py-8 font-sans">
       <Header />
-      <div className="container px-4 mx-auto min-h-[556px] rounded-2xl overflow-hidden">
-      <div className="w-7/12 bg-white h-full">
+      <div className="container px-4 mx-auto md:max-h-[556px] ">
+        <div className="flex flex-col xl:flex-row flex-nowrap justify-center rounded-2xl h-full ambient brd-gradient">
+        <div className="grow aspect-video bg-white h-full">
       <Routes>
           <Route exact path="/" element={<Watch />} />
           <Route path="/rewind" element={<Rewind />} />
@@ -22,7 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-      <div className="w-3/12 text-white h-full text-2xl"> chat engine</div>
+      <div className="h-full rounded-r-xl "><Chat /></div>
+      </div>
       </div>
       <Footer />
     </div>

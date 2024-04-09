@@ -22,3 +22,39 @@
     font-display: swap;
 
   }
+
+  :root {
+    --body-regular-font-family: "Poppins", Helvetica, sans-serif;
+    --body-regular-font-size: 14px;
+    --body-regular-font-style: normal;
+    --body-regular-font-weight: 400;
+    --body-regular-letter-spacing: 0px;
+    --light-border: linear-gradient(to bottom, rgba(251, 241, 207, .2) 0%, rgba(255,255,255, 0) 100%); 
+    --body-regular-line-height: 22px;
+    --charactertitle-85: rgba(0, 0, 0, 0.85);
+    --neutral-2: rgba(250, 250, 250, 1);
+    --neutral-5: rgba(217, 217, 217, 1);
+    --soft-secondary: rgba(251, 241, 207, 0.1);
+    --danger: rgba(197, 34, 34, 1);
+    --primary: rgba(32, 22, 25, 1);
+    --secondary: rgba(250, 229, 5, 1);
+    --success: rgba(77, 192, 93, 1);
+    --text: rgba(251, 241, 207, 1);
+    --text-light: rgba(251, 241, 207, 0.45);
+    --whitewhite: rgba(255, 255, 255, 1);
+    background-color: var(--primary);
+  }
+
+  .brd-gradient {
+    background: linear-gradient(var(--primary), var(--primary)) padding-box,
+                var(--light-border) border-box;
+    border-radius: 12px;
+    border: 1px solid transparent;
+  }
+  
+  .ambient {
+    /* To-do: make ambient mode "youtube style" with canvas */
+    box-shadow: 0px 0px 160px 0 rgba(251,241,207,0.07);
+  }
+
+  

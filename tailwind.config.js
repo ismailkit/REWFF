@@ -8,7 +8,19 @@ module.exports = {
         'microbrew-inline': ['"Microbrew One Inline"', 'sans-serif'],
         'microbrew-regular': ['"Microbrew One Regular"', 'sans-serif'],
       },
+      colors: {
+        'soft-secondary': "var(--soft-secondary)",
+        'light': 'var(--text-light)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        success: 'var(--success)',
+        danger: 'var(--danger)',
+        text: 'var(--text)',
+        lighborder: 'var(--light-border)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
